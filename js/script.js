@@ -10,13 +10,33 @@
 
 // MILESTONE 0:
 // Creare l’array di oggetti con le informazioni fornite.
+const teamArray = [
+    {
+        nome: "Wayne",
+        cognome: "Barnett",
+        ruolo: "Founder & CEO",
+        foto: "wayne-barnett-founder-ceo.jpg"
+    }
+]
 
 // MILESTONE 1:
 // Stampare su console le informazioni di nome, ruolo e la stringa della foto
+console.log(teamArray);
 
 // MILESTONE 2:
 // Stampare le stesse informazioni su DOM sottoforma di stringhe
+const teamRow = document.querySelector(".row");
 
+for (let i = 0; i < teamArray.length; i++) {
+    const cardTeam = teamArray[i];
+    teamRow.innerHTML += `
+        <div class="card">
+            <img src="${cardTeam.foto}" alt="Wayne Barret">
+            <h2>${cardTeam.nome} ${cardTeam.cognome}</h2>
+            <h3>${cardTeam.ruolo}</h3>
+        </div>
+    `;
+}
 
 // BONUS 1:
 // Trasformare la stringa foto in una immagine effettiva
