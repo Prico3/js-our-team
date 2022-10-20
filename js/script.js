@@ -31,7 +31,7 @@ for (let i = 0; i < teamArray.length; i++) {
     const cardTeam = teamArray[i];
     teamRow.innerHTML += `
         <div class="card">
-            <img src="${cardTeam.foto}" alt="Wayne Barret">
+            <img src="img/wayne-barnett-founder-ceo.jpg" alt="Wayne Barret">
             <h2>${cardTeam.nome} ${cardTeam.cognome}</h2>
             <h3>${cardTeam.ruolo}</h3>
         </div>
