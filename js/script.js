@@ -16,6 +16,41 @@ const teamArray = [
         cognome: "Barnett",
         ruolo: "Founder & CEO",
         foto: "wayne-barnett-founder-ceo.jpg"
+    },
+
+    {
+        nome: "Wayne",
+        cognome: "Barnett",
+        ruolo: "Founder & CEO",
+        foto: "wayne-barnett-founder-ceo.jpg"
+    },
+
+    {
+        nome: "Wayne",
+        cognome: "Barnett",
+        ruolo: "Founder & CEO",
+        foto: "wayne-barnett-founder-ceo.jpg"
+    },
+
+    {
+        nome: "Wayne",
+        cognome: "Barnett",
+        ruolo: "Founder & CEO",
+        foto: "wayne-barnett-founder-ceo.jpg"
+    },
+
+    {
+        nome: "Wayne",
+        cognome: "Barnett",
+        ruolo: "Founder & CEO",
+        foto: "wayne-barnett-founder-ceo.jpg"
+    },
+
+    {
+        nome: "Wayne",
+        cognome: "Barnett",
+        ruolo: "Founder & CEO",
+        foto: "wayne-barnett-founder-ceo.jpg"
     }
 ]
 
@@ -30,11 +65,13 @@ const teamRow = document.querySelector(".row");
 for (let i = 0; i < teamArray.length; i++) {
     const cardTeam = teamArray[i];
     teamRow.innerHTML += `
-        <div class="card">
-            <img src="img/wayne-barnett-founder-ceo.jpg" alt="Wayne Barret">
-            <h2>${cardTeam.nome} ${cardTeam.cognome}</h2>
-            <h3>${cardTeam.ruolo}</h3>
-        </div>
+        <div class="col">
+            <div class="card">
+                <img src="img/wayne-barnett-founder-ceo.jpg" alt="Wayne Barret">
+                <h2>${cardTeam.nome} ${cardTeam.cognome}</h2>
+                <h3>${cardTeam.ruolo}</h3>
+            </div>
+        </div>    
     `;
 }
 
