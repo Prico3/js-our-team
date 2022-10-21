@@ -19,15 +19,15 @@ const teamArray = [
     },
 
     {
-        nome: "Wayne",
-        cognome: "Barnett",
-        ruolo: "Founder & CEO",
-        foto: "wayne-barnett-founder-ceo.jpg"
+        nome: "Angela",
+        cognome: "Caroll",
+        ruolo: "Chief Editor",
+        foto: "angela-caroll-chief-editor.jpg"
     },
 
     {
-        nome: "Wayne",
-        cognome: "Barnett",
+        nome: "Walter",
+        cognome: "Gordon",
         ruolo: "Founder & CEO",
         foto: "wayne-barnett-founder-ceo.jpg"
     },
@@ -67,7 +67,7 @@ for (let i = 0; i < teamArray.length; i++) {
     teamRow.innerHTML += `
         <div class="col">
             <div class="card">
-                <img src="img/wayne-barnett-founder-ceo.jpg" alt="Wayne Barret">
+                <img src="img/${cardTeam.foto}" alt="Wayne Barret">
                 <h2>${cardTeam.nome} ${cardTeam.cognome}</h2>
                 <h3>${cardTeam.ruolo}</h3>
             </div>
